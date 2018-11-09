@@ -1,0 +1,91 @@
+/* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+/*
+ BARVY
+ czechitas  #b92e81
+ pozadi     #bdc3c7
+ tmava      #31363b
+ delitka    #3f464d
+ portfolio  #e74c3c
+ facebook   #3b5998
+ twitter    #1da1f2
+*/
+
+body {
+    background-color: grey;
+    padding: 50px;
+}
+.profil {
+    background-color: #31363a;
+    width: 250px;
+    position: relative;
+    box-shadow: 3px 3px 15px rgba(0,0,0,0.5);  
+}
+h1 {color:#fff;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    font-size: 24px;
+}
+p {color: #afc0c4;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: left;
+    font-size: 14px;
+}
+img.foto {
+    width: 100%;
+}
+img.logo{
+    position: absolute;
+    top: 142px;
+    right: 25px;
+    background:#b92e81;
+    border-radius: 50px;
+    box-shadow: 1px 2px 10px rgba(0,0,0,0.8);  
+}
+li a {
+    text-decoration: none;
+    color: #afc0c4;
+    display: block;
+    padding: 10px 0 10px 0;
+}
+li.facebook a:hover{
+    background-color: #3b5998;
+}
+li.twitter a:hover{
+    background-color: #1da1f2;
+}
+li.portfolio a:hover{
+    background-color: #e74c3c;
+}
+li a:hover{
+    color:white;
+}
+.obsah{
+    padding: 20px;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    border-top: 1px solid #3f464d;
+    font-size: 14px;
+    font-weight: bold;
+}
+li.portfolio {
+    display: block;
+    text-align: center;
+}
+li.facebook,li.twitter {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+}
+li.facebook {
+    border-right: 1px solid #3f464d;
+}
